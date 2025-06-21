@@ -1,0 +1,1 @@
+/Users/edward/To\ Do\ List\ App/target/debug/todo-sync: /Users/edward/To\ Do\ List\ App/crates/todo-core/src/db.rs /Users/edward/To\ Do\ List\ App/crates/todo-core/src/lib.rs /Users/edward/To\ Do\ List\ App/crates/todo-core/src/log.rs /Users/edward/To\ Do\ List\ App/crates/todo-core/src/model.rs /Users/edward/To\ Do\ List\ App/crates/todo-sync/src/main.rs

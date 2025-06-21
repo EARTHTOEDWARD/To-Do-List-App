@@ -1,0 +1,18 @@
+{
+  "image": "mcr.microsoft.com/vscode/devcontainers/rust:1-86",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "cargo install cargo-watch && pnpm i",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "tauri-apps.tauri-vscode",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}

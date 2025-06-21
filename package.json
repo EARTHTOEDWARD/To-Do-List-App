@@ -1,0 +1,17 @@
+{
+  "name": "graph-os",
+  "version": "0.1.0",
+  "description": "Local-first visual To-Do & knowledge graph",
+  "scripts": {
+    "dev": "pnpm --filter desktop-tauri tauri dev",
+    "build": "cargo build --all && pnpm --filter desktop-tauri tauri build",
+    "test": "cargo test --all"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

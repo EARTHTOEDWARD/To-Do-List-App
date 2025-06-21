@@ -1,0 +1,16 @@
+[package]
+name = "todo-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "todo"
+path = "src/main.rs"
+
+[dependencies]
+todo-core = { path = "../todo-core" }
+clap = { workspace = true }
+anyhow = { workspace = true }
+tokio = { workspace = true }
+serde_json = { workspace = true }
+ulid = { workspace = true }

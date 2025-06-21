@@ -1,0 +1,24 @@
+[package]
+name = "desktop-tauri"
+version = "0.1.0"
+description = "Graph-OS Desktop App"
+authors = ["you"]
+license = ""
+repository = ""
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = ["api-all"] }
+tauri-plugin-sql = { version = "1.4", features = ["sqlite"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+todo-core = { path = "../../../crates/todo-core" }
+tokio = { version = "1.0", features = ["full"] }
+ulid = "1.1"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
